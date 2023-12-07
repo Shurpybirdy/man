@@ -1,0 +1,12 @@
+func _on_AnimatedSprite2D_animation_finished():
+    if $AnimatedSprite2D.animation == "death":
+        print("Player has been naenae'd")
+        self.queue_free()
+
+
+
+if health <= 0 and can_take_damage:
+    can_take_damage = false
+    health = 0
+    player_alive = false 
+    $AnimatedSprite2D.play("death")
